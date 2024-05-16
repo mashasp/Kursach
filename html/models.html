@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porsche</title>
+    <link rel="stylesheet" href="../css/models.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../js/shared.js"></script>
+   
+  </head>
+  <body>
+
+    <div id="call_back_container" class="call_back_overlay" style="display: none;">
+      <div class="call_back_container">
+        <div class="call_back_form_container">
+          <div class="call_back_container_close_button" onclick="callBackFormToggle()">
+            <img src="../img/close-icon.svg">
+          </div>
+          <div class="call_back_form_heading">
+            <img src="../img/logo-call-back.svg">
+            <h1>PORSCHE</h1>
+          </div>
+          <h2>Запись на консультацию:</h2>
+          <form id="call_back_form" class="call_back_form" onsubmit="callBackFormSendContacts()" style="display: flex;">
+            <input type="text" placeholder="Введите ФИО" required>
+            <input type="tel" placeholder="Введите номер телефона" required>
+            <input type="email" placeholder="Почта email">
+            <input type="submit">
+          </form>
+          <p id="call_back_form_success" class="call_back_form_success" style="display: none;">
+            Ваши контатные данные отправлены, наш консультант свяжется с вами в ближайшее время
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="back-to-top" class="back_to_top" style="display: none;">
+      <img src="../img/up-arrow-icon.svg" />
+    </div>
+
+    <header>
+      <div class="header_company">
+        <a href="https://www.porsche.com" target="_blank">
+          <img src="../img/header-logo.svg" />
+        </a>
+        <p class="header_company_name">PORSCHE</p>
+      </div>
+
+      <div class="header_nav">
+        <a href="about_us.html">главная</a>
+        <a href="about_us.html#news">новости</a>
+        <a style="color: #f1d582;">модельный ряд</a>
+        <a href="#footer">контакты</a>
+      </div>
+      <div class="header_nav_mobile_button">
+        <button onclick="mobileMenuToggle()">
+          <img src="../img/menu-button-mobile.svg">
+        </button>
+      </div>
+      <div id="nav_mobile" class="header_nav_mobile" style="display: none;">
+        <a href="about_us.html">главная</a>
+        <a href="about_us.html#news">новости</a>
+        <a style="color: #f1d582;">модельный ряд</a>
+        <a href="#footer">контакты</a>
+      </div>
+    </header>
+
+    <div class="first_block">
+      <div class="first_block_title">
+        <h1>Модельный ряд</h1>
+        <div class="first_block_title_divider"></div>
+      </div>
+      <div id="models_list_cards" class="first_block_model_list"></div>
+    </div>
+
+    <div class="design_divider_block">
+      <div class="design_divider_block_text">
+        <h2>Design</h2>
+        <p>Спереди, сзади или сбоку – автомобиль под любым ракурсом демонстрирует свои классические спортивные формы с неподвластным времени дизайном, каждая деталь которого свидетельствует об устремленности в будущее.</p>
+      </div>
+    </div>
+
+    <div id="models_list_design" class="third_block"></div>
+
+    <div class="dynamics_divider_block">
+      <div class="dynamics_divider_block_text">
+        <h2>Dynamics</h2>
+        <p>Для наших инженеров каждая линия финиша является лишь промежуточной остановкой. На пути вперед. В процессе вечного стремления добиваться большего.</p>
+      </div>
+    </div>
+
+    <div id="models_list_dynamics" class="third_block"></div>
+
+    <div class="consultation_block">
+      <p>Не нашли подходящий авто или хотите узнать больше? Записывайтесь!</p>
+      <button onclick="callBackFormToggle()" class="consultation_block_button">Записаться на консультацию</button>
+      <p>
+        Безупречность автомобилей Porsche не нуждается в подтверждении, а полный спектр сервисных услуг окончательно убедят Вас в правильности выбора.
+        <br>
+        <br>
+        Мы будем очень рады видеть Вас в нашем автоцентре!
+      </p>
+    </div>
+
+    <footer id="footer" class="footer_container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.898028999034!2d27.708356377069244!3d53.95131897247094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc9456e689613%3A0x2100ee88a325bc40!2z0L_RgC4g0J3QtdC30LDQstC40YHQuNC80L7RgdGC0LggMTk4LCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sby!4v1715766469690!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="footer_contacts">
+        <h2>Контакты:</h2>
+        <div class="footer_contacts_phone_number">
+          +375 44 7026155
+        </div>
+        <div class="footer_contacts_phone_number">
+          +375 44 7026155
+        </div>
+        <div class="footer_contacts_address">
+          <img src="../img/footer-address-icon.svg" />
+          <p>г. Минск пр. Независимости, 198</p>
+        </div>
+        <div class="footer_contacts_timing">
+          <p>Время работы:</p>
+          <div class="footer_contacts_timing_row">
+            <p>Понедельник - пятница</p>
+            <p>10:00-19:00</p>
+          </div>
+          <div class="footer_contacts_timing_row">
+            <p>Суббота</p>
+            <p>10:00-18:00</p>
+          </div>
+        </div>
+        <div class="footer_contacts_buttons_container">
+          <button>
+            <a href="https://www.instagram.com/porsche" target="_blank">
+              <img src="../img/instagram-icon.svg" alt="Instagram">
+            </a>
+          </button>
+          <button>
+            <a href="https://t.me/porsche" target="_blank">
+              <img src="../img/telegram-icon.svg" alt="Telegram">
+            </a>
+          </button>
+          <button>
+            <a href="https://www.facebook.com/porsche" target="_blank">
+              <img src="../img/facebook-icon.svg" alt="Facebook">
+            </a>
+          </button>
+          <button>
+            <a href="https://www.youtube.com/porsche" target="_blank">
+              <img src="../img/youtube-icon.svg" alt="YouTube">
+            </a>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/models.js"></script>
+  </body>
+</html>

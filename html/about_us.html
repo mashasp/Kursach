@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porsche</title>
+    <link rel="stylesheet" href="../css/about_us.css">
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../js/shared.js"></script>
+
+  </head>
+  <body>
+
+    <div id="call_back_container" class="call_back_overlay" style="display: none;">
+      <div class="call_back_container">
+        <div class="call_back_form_container">
+          <div class="call_back_container_close_button" onclick="callBackFormToggle()">
+            <img src="../img/close-icon.svg">
+          </div>
+          <div class="call_back_form_heading">
+            <img src="../img/logo-call-back.svg">
+            <h1>PORSCHE</h1>
+          </div>
+          <h2>Запись на консультацию:</h2>
+          <form id="call_back_form" class="call_back_form" style="display: flex;" onsubmit="return callBackFormSendContacts()">
+            <input type="text" placeholder="Введите ФИО" required>
+            <input type="tel" placeholder="Введите номер телефона" required>
+            <input type="email" placeholder="Почта email">
+            <input type="submit">
+          </form>
+          <p id="call_back_form_success" class="call_back_form_success" style="display: none;">
+            Ваши контатные данные отправлены, наш консультант свяжется с вами в ближайшее время
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="back-to-top" class="back_to_top" style="display: none;">
+      <img src="../img/up-arrow-icon.svg" />
+    </div>
+
+    <header>
+      <div class="header_company">
+        <a href="https://www.porsche.com" target="_blank">
+          <img src="../img/header-logo.svg" />
+        </a>
+        <p class="header_company_name">PORSCHE</p>
+      </div>
+
+      <div class="header_nav">
+        <a style="color: #f1d582;">главная</a>
+        <a href="#news">новости</a>
+        <a href="./models.html">модельный ряд</a>
+        <a href="#footer">контакты</a>
+      </div>
+      <div class="header_nav_mobile_button">
+        <button onclick="mobileMenuToggle()">
+          <img src="../img/menu-button-mobile.svg">
+        </button>
+      </div>
+      <div id="nav_mobile" class="header_nav_mobile" style="display: none;">
+        <a style="color: #f1d582;">главная</a>
+        <a href="#news">новости</a>
+        <a href="./models.html">модельный ряд</a>
+        <a href="#footer">контакты</a>
+      </div>
+    </header>
+
+    <div class="intro_block">
+      <div>
+        <p>PORSCHE</p>
+          <img src="../img/intro-logo.svg" />
+        </a>
+      </div>
+    </div>
+  
+
+    <div class="first_block">
+      <div class="first_block_divider">
+        <hr />
+        <p>Выберите свой автомобиль</p>
+      </div>
+      <div class="first_block_card">
+        <div class="first_block_card_left_side">
+          <h2>
+            Автомобили в наличии и на заказ 
+          </h2>
+          <p>
+            Качественный сервис, быстрая обработка информации, полный пакет документов, а также приятные условия рассрочки.
+            <br/><br/>
+            Ознакомьтесь с нашим каталогом автомобилей, услугами и ценами.
+          </p>
+          <a href="./models.html">
+            <img src="../img/first-block-button-icon.svg" />
+            <span>Открыть каталог</span>
+          </a>
+        </div>
+        <div class="first_block_card_right_side">
+          <img src="../img/first-block-image.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="second_block"></div>
+
+    <div id="news" class="third_block">
+      <div class="third_block_title">
+        <h2>Porsche 911 Turbo S теперь в наличии</h2>
+      </div>
+      <div class="third_block_card">
+        <div class="third_block_card_left_side">
+          <h3>Идея 911 Turbo.</h3>
+          <p>
+            Наши инженеры стремятся создавать совершенные, но при этом комфортабельные и практичные спорткары.
+            <br/><br/>
+            Модель 911 Turbo полностью соответствуют этому подходу.
+          </p>
+        </div>
+        <div class="third_block_card_right_side">
+          <img src="../img/third-block-image.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="fourth_block">
+      <div class="fourth_block_title">
+        <div class="characteristics fourth_block_characteristics">
+          <div class="characteristics_container">
+            <div class="characteristics_icon_container">
+              <img src="../img/gasoline-icon.svg">
+            </div>
+            <div class="characteristics_description">
+              <p class="characteristics_description_index">11,5</p>
+              <p class="characteristics_description_unit">л/100 км</p>
+            </div>
+          </div>
+          <div class="characteristics_container">
+            <div class="characteristics_icon_container">
+              <img src="../img/co-icon.svg">
+            </div>
+            <div class="characteristics_description">
+              <p class="characteristics_description_index">263</p>
+              <p class="characteristics_description_unit">г/км</p>
+            </div>
+          </div>
+        </div>
+        <h2>911 Turbo S</h2>
+        <p class="fourth_block_title_paragraph">от 791 190 BYN</p>
+      </div>
+      <div class="fourth_block_image">
+        <img src="../img/fourth-block-image.png" />
+      </div>
+      <div class="details_block">
+        <div class="details_block_element">
+          <h3>478 кВт/650 л.с.</h3>
+          <p>Мощность (кВт)/Мощность (л.с.)</p>
+        </div>
+        <div class="details_block_element">
+          <h3>2,7 c</h3>
+          <p>Разгон 0 - 100 км/ч</p>
+        </div>
+        <div class="details_block_element">
+          <h3>330 км/ч</h3>
+          <p>Максимальная  скорость </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fifth_block">
+      <img src="../img/fifth-block-image.png">
+      <div class="fifth_block_description">
+        <p>
+          Новое поколение: 6-цилиндровый оппозитный двигатель битурбо с изменяемой геометрией турбин (VTG)
+        </p>
+        <hr>
+        <p>
+          Новая 8-ступенчатая кпп Porsche Doppelkuppling (PDK)
+        </p>
+        <hr>
+        <p>
+          Операционная спортивная сиситема выхлопа
+        </p>
+      </div>
+    </div>
+
+    <div class="consultation_block">
+      <div class="consultation_block_description">
+        <p class="consultation_block_description_main_text">
+          Запишитесь на консультацию и получите <br> тест-драйв в подарок
+        </p>
+        <p class="consultation_block_description_text">
+          *акция действует только при записи на сайте
+        </p>
+      </div>
+      <button class="consultation_block_button" onclick="callBackFormToggle()">
+        Записаться на консультацию
+      </button>
+    </div>
+
+    <div class="sixth_block"></div>
+
+    <div class="footer_divider">
+      <p>
+        Безупречность автомобилей Porsche не нуждается в подтверждении, а полный спектр сервисных услуг окончательно убедят Вас в правильности выбора.
+        <br>
+        <br>
+        Мы будем очень рады видеть Вас в нашем автоцентре!
+      </p>
+    </div>
+
+    <footer id="footer" class="footer_container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.898028999034!2d27.708356377069244!3d53.95131897247094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc9456e689613%3A0x2100ee88a325bc40!2z0L_RgC4g0J3QtdC30LDQstC40YHQuNC80L7RgdGC0LggMTk4LCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sby!4v1715766469690!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="footer_contacts">
+        <h2>Контакты:</h2>
+        <div class="footer_contacts_phone_number">
+          +375 44 7026155
+        </div>
+        <div class="footer_contacts_phone_number">
+          +375 44 7026155
+        </div>
+        <div class="footer_contacts_address">
+          <img src="../img/footer-address-icon.svg" />
+          <p>г. Минск пр. Независимости, 198</p>
+        </div>
+        <div class="footer_contacts_timing">
+          <p>Время работы:</p>
+          <div class="footer_contacts_timing_row">
+            <p>Понедельник - пятница</p>
+            <p>10:00-19:00</p>
+          </div>
+          <div class="footer_contacts_timing_row">
+            <p>Суббота</p>
+            <p>10:00-18:00</p>
+          </div>
+        </div>
+       
+
+      <div class="footer_contacts_buttons_container">
+        <button>
+          <a href="https://www.instagram.com/porsche" target="_blank">
+            <img src="../img/instagram-icon.svg" alt="Instagram">
+          </a>
+        </button>
+        <button>
+          <a href="https://t.me/porsche" target="_blank">
+            <img src="../img/telegram-icon.svg" alt="Telegram">
+          </a>
+        </button>
+        <button>
+          <a href="https://www.facebook.com/porsche" target="_blank">
+            <img src="../img/facebook-icon.svg" alt="Facebook">
+          </a>
+        </button>
+        <button>
+          <a href="https://www.youtube.com/porsche" target="_blank">
+            <img src="../img/youtube-icon.svg" alt="YouTube">
+          </a>
+        </button>
+      </div>
+    </footer>
+
+  </body>
+</html>
